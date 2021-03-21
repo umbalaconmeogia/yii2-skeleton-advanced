@@ -12,11 +12,11 @@
 
 // you may need to adjust this path to the correct Yii framework path
 // uncomment and adjust the following line if Yii is not located at the default path
-//$frameworkPath = dirname(__FILE__) . '/vendor/yiisoft/yii2';
+//$frameworkPath = dirname(__FILE__) . '/../yii2/vendor/yiisoft/yii2';
 if (!isset($frameworkPath)) {
     $searchPaths = array(
-        dirname(__FILE__) . '/vendor/yiisoft/yii2',
-        dirname(__FILE__) . '/../../vendor/yiisoft/yii2',
+        dirname(__FILE__) . '/../yii2/vendor/yiisoft/yii2',
+        dirname(__FILE__) . '/../../../yii2/vendor/yiisoft/yii2',
     );
     foreach ($searchPaths as $path) {
         if (is_dir($path)) {
