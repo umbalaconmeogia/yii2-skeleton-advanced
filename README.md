@@ -14,6 +14,16 @@ The main reason is for faster searching text while developing.
 When we search for text in files of the application, we don't want to search in the yii2 core and dependencies' code, which are put in *vendor* directory in the application root.
 So we want to move the *vendor* directory outside the main application directory.
 
+This skeleton contains the following change from the original code.
+1. Change directory structure.
+1. Separate menu code from *frontend/views/layouts/main.php* to *frontend/views/layouts/_menu_.php*.
+1. Allow to change to full width screen by setting `$this->params['fluid'] = TRUE;` in view file.
+1. Display message about running environtment at the screen top left corner by setting `environtmentNotice` in *common\config\params-local.php*.
+
+TODO
+1. Add Login with google.
+2. Move environtmentNotice into yii2-batsg.
+
 ## Directory structure
 
 Assume that the yii2 application source code is put in the directory *app*. The *vendor* should be move into the directory *yii2* which is at same level to *app*.
