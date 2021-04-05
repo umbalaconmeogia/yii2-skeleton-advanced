@@ -3,9 +3,8 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
+use batsg\widgets\EnvironmentNotice;
 use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use common\widgets\Alert;
@@ -26,11 +25,7 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-<?php if (isset(Yii::$app->params['environmentNotice']) && Yii::$app->params['environmentNotice']) { ?>
-    <span style="position: fixed; top: 0; left: 0; z-index: 10000; background: yellow; color: red;">
-        <?= Yii::t('app', Yii::$app->params['environmentNotice']) ?>
-    </span>
-<?php } ?>
+<?= EnvironmentNotice::widget() ?>
 
 <div class="wrap">
 

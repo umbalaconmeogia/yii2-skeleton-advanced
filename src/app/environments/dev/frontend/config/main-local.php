@@ -4,7 +4,16 @@ $config = [
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => '',
+            'cookieValidationKey' => '7SaVFgc4_vzl1MEoNWTX4bXEqNO7WFyw',
+        ],
+        // 'environmentNotice' => [
+        //     'class' => 'batsg\widgets\EnvironmentNotice',
+        //     'environment' => 'PROD',
+        // ],
+    ],
+    'container' => [
+        'definitions' => [
+            'batsg\widgets\EnvironmentNotice' => ['environment' => 'LOCAL'],
         ],
     ],
 ];

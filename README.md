@@ -2,6 +2,8 @@
 
 Application skeleton based on yii2 framework advanced template version 2.0.41.
 
+This is for my own development.
+
 ## Overview
 
 This is the source code template of yii2 application, modified from the original yii2 advanced application template.
@@ -16,7 +18,7 @@ So we want to move the *vendor* directory outside the main application directory
 
 This skeleton contains the following change from the original code.
 1. Change directory structure.
-1. Separate menu code from *frontend/views/layouts/main.php* to *frontend/views/layouts/_menu_.php*.
+1. Separate menu code from *frontend/views/layouts/main.php* to *frontend/views/layouts/_menu.php*.
 1. Allow to change to full width screen by setting `$this->params['fluid'] = TRUE;` in view file.
 1. Display message about running environtment at the screen top left corner by setting `environtmentNotice` in *common\config\params-local.php*.
 
