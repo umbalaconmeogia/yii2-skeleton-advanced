@@ -57,3 +57,7 @@ The structure of the source code will be as following:
 ```
 
 This directory structure is creation is described [here](docs/directoryStructure.md).
+
+## External packages
+
+This skeleton include some [external packages](docs/externalPackages.md).
