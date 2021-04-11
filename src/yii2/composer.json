@@ -18,9 +18,11 @@
         "yiisoft/yii2": "~2.0.14",
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
-        "umbalaconmeogia/yii2-batsg": "^0.6.7",
         "yiisoft/yii2-authclient": "^2.2",
-        "giannisdag/yii2-check-login-attempts": "^1.1"
+        "giannisdag/yii2-check-login-attempts": "^1.1",
+        "umbalaconmeogia/yii2-batsg": "*",
+        "umbalaconmeogia/yii2-i18nui": "*",
+		"umbalaconmeogia/yii2-user": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
@@ -43,6 +45,10 @@
         {
             "type": "composer",
             "url": "https://asset-packagist.org"
-        }
+        },
+        {
+		    "type": "vcs",
+			"url": "../../../yii2-user"
+		}
     ]
 }

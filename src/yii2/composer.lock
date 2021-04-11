@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "55bad0ff703391fd501c3de5a558633a",
+    "content-hash": "61229218b22c12d4502ceee0e17eafef",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -931,6 +931,55 @@
                 "source": "https://github.com/umbalaconmeogia/yii2-batsg/tree/v0.6.7"
             },
             "time": "2021-04-05T08:23:50+00:00"
+        },
+        {
+            "name": "umbalaconmeogia/yii2-i18nui",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/umbalaconmeogia/yii2-i18nui.git",
+                "reference": "d2f72950d67b43599163a426c7fe30888f9301ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/umbalaconmeogia/yii2-i18nui/zipball/d2f72950d67b43599163a426c7fe30888f9301ab",
+                "reference": "d2f72950d67b43599163a426c7fe30888f9301ab",
+                "shasum": ""
+            },
+            "require": {
+                "umbalaconmeogia/yii2-batsg": "*",
+                "yiisoft/yii2": ">=2.0.6"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "umbalaconmeogia\\i18nui\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tran Trung Thanh",
+                    "role": "Developer"
+                }
+            ],
+            "description": "GUI for editing i18n translation in database",
+            "keywords": [
+                "db",
+                "extension",
+                "i18n",
+                "manager",
+                "translation",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/umbalaconmeogia/yii2-i18nui/issues",
+                "source": "https://github.com/umbalaconmeogia/yii2-i18nui/tree/v1.2.3"
+            },
+            "time": "2021-01-05T14:27:56+00:00"
         },
         {
             "name": "yiisoft/yii2",

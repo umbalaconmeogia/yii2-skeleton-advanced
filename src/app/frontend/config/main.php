@@ -28,14 +28,33 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
         ],
-        */
+        'i18n' => [
+            'translations' => [
+                'yii*' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@vendor/yiisoft/yii2/messages',
+                    'sourceLanguage' => 'en'
+                ],
+                'app' => [
+                    'class' => 'yii\i18n\DbMessageSource',
+                    'forceTranslation' => true,
+                    //'enableCaching' => false,
+                    //'cachingDuration' => 3600,
+                ],
+            ],
+        ],
+    ],
+    'modules' => [
+        'i18nui' => [
+            'class' => 'umbalaconmeogia\i18nui\Module',
+            'languages' => ['en', 'ja', 'vi'], // Any languages that you want to use
+        ],
     ],
     'params' => $params,
 ];
