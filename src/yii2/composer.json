@@ -22,7 +22,7 @@
         "giannisdag/yii2-check-login-attempts": "^1.1",
         "umbalaconmeogia/yii2-batsg": "*",
         "umbalaconmeogia/yii2-i18nui": "*",
-		"umbalaconmeogia/yii2-user": "dev-main"
+        "umbalaconmeogia/yii2-systemuser": "@dev"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
@@ -48,7 +48,7 @@
         },
         {
 		    "type": "path",
-            "url": "../../../yii2-user"
+            "url": "../../../yii2-systemuser"
 		}
     ]
 }

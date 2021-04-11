@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e05aec09f1c97426a082cdca589d3043",
+    "content-hash": "1e5d8759eb75390e3cd93753943ad618",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -982,17 +982,17 @@
             "time": "2021-01-05T14:27:56+00:00"
         },
         {
-            "name": "umbalaconmeogia/yii2-user",
+            "name": "umbalaconmeogia/yii2-systemuser",
             "version": "dev-main",
             "dist": {
                 "type": "path",
-                "url": "../../../yii2-user",
-                "reference": "a62ed1b76f0b13288cac74d0a62ea5975e0379f7"
+                "url": "../../../yii2-systemuser",
+                "reference": "e7bd5f84fdf65c0f37ff5b5fe03fee94f65ca7c5"
             },
             "type": "yii2-extension",
             "autoload": {
                 "psr-4": {
-                    "umbalaconmeogia\\user\\": "src/"
+                    "umbalaconmeogia\\systemuser\\": "src/"
                 }
             },
             "license": [
@@ -1009,7 +1009,7 @@
                 "extension",
                 "login",
                 "manager",
-                "user",
+                "systemuser",
                 "yii2"
             ],
             "transport-options": {
@@ -5588,7 +5588,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "umbalaconmeogia/yii2-user": 20
+        "umbalaconmeogia/yii2-systemuser": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
