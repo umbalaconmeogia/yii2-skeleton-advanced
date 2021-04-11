@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "61229218b22c12d4502ceee0e17eafef",
+    "content-hash": "e05aec09f1c97426a082cdca589d3043",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -980,6 +980,41 @@
                 "source": "https://github.com/umbalaconmeogia/yii2-i18nui/tree/v1.2.3"
             },
             "time": "2021-01-05T14:27:56+00:00"
+        },
+        {
+            "name": "umbalaconmeogia/yii2-user",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../../../yii2-user",
+                "reference": "a62ed1b76f0b13288cac74d0a62ea5975e0379f7"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "umbalaconmeogia\\user\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tran Trung Thanh",
+                    "role": "Developer"
+                }
+            ],
+            "description": "User login and user management",
+            "keywords": [
+                "extension",
+                "login",
+                "manager",
+                "user",
+                "yii2"
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "yiisoft/yii2",
@@ -5551,8 +5586,10 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "umbalaconmeogia/yii2-user": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

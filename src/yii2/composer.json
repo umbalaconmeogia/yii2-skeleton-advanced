@@ -12,7 +12,7 @@
         "irc": "irc://irc.freenode.net/yii",
         "source": "https://github.com/yiisoft/yii2"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.6.0",
         "yiisoft/yii2": "~2.0.14",
@@ -22,7 +22,7 @@
         "giannisdag/yii2-check-login-attempts": "^1.1",
         "umbalaconmeogia/yii2-batsg": "*",
         "umbalaconmeogia/yii2-i18nui": "*",
-		"umbalaconmeogia/yii2-user": "*"
+		"umbalaconmeogia/yii2-user": "dev-main"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
@@ -47,8 +47,8 @@
             "url": "https://asset-packagist.org"
         },
         {
-		    "type": "vcs",
-			"url": "../../../yii2-user"
+		    "type": "path",
+            "url": "../../../yii2-user"
 		}
     ]
 }
