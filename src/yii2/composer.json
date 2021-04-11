@@ -21,8 +21,8 @@
         "yiisoft/yii2-authclient": "^2.2",
         "giannisdag/yii2-check-login-attempts": "^1.1",
         "umbalaconmeogia/yii2-batsg": "*",
-        "umbalaconmeogia/yii2-i18nui": "*",
-        "umbalaconmeogia/yii2-systemuser": "@dev"
+        "umbalaconmeogia/yii2-systemuser": "@dev",
+        "umbalaconmeogia/yii2-i18nui": "v1.2.4"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",

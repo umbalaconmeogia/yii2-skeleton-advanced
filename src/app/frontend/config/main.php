@@ -10,7 +10,13 @@ return [
     'id' => 'app-frontend',
     'name' => 'Yii2Skel',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log'],
+    'bootstrap' => [
+        'log',
+        [
+            'class' => 'umbalaconmeogia\i18nui\components\LanguageSelector',
+            'supportedLanguages' => ['vi', 'en', 'ja'],
+        ],
+    ],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
         'request' => [
@@ -48,12 +54,6 @@ return [
                     //'cachingDuration' => 3600,
                 ],
             ],
-        ],
-    ],
-    'modules' => [
-        'i18nui' => [
-            'class' => 'umbalaconmeogia\i18nui\Module',
-            'languages' => ['en', 'ja', 'vi'], // Any languages that you want to use
         ],
     ],
     'params' => $params,

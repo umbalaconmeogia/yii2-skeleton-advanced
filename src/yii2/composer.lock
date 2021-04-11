@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1e5d8759eb75390e3cd93753943ad618",
+    "content-hash": "2d35e815bf8db27557f78392e48368fa",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -934,16 +934,16 @@
         },
         {
             "name": "umbalaconmeogia/yii2-i18nui",
-            "version": "v1.2.3",
+            "version": "v1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/umbalaconmeogia/yii2-i18nui.git",
-                "reference": "d2f72950d67b43599163a426c7fe30888f9301ab"
+                "reference": "38f3c67fe1f6dfa8c7897e8729ef678609bfa2ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/umbalaconmeogia/yii2-i18nui/zipball/d2f72950d67b43599163a426c7fe30888f9301ab",
-                "reference": "d2f72950d67b43599163a426c7fe30888f9301ab",
+                "url": "https://api.github.com/repos/umbalaconmeogia/yii2-i18nui/zipball/38f3c67fe1f6dfa8c7897e8729ef678609bfa2ac",
+                "reference": "38f3c67fe1f6dfa8c7897e8729ef678609bfa2ac",
                 "shasum": ""
             },
             "require": {
@@ -977,9 +977,9 @@
             ],
             "support": {
                 "issues": "https://github.com/umbalaconmeogia/yii2-i18nui/issues",
-                "source": "https://github.com/umbalaconmeogia/yii2-i18nui/tree/v1.2.3"
+                "source": "https://github.com/umbalaconmeogia/yii2-i18nui/tree/v1.2.4"
             },
-            "time": "2021-01-05T14:27:56+00:00"
+            "time": "2021-04-11T14:09:29+00:00"
         },
         {
             "name": "umbalaconmeogia/yii2-systemuser",

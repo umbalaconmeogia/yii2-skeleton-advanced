@@ -10,4 +10,13 @@ return [
             'class' => 'yii\caching\FileCache',
         ],
     ],
+    'modules' => [
+        'i18nui' => [
+            'class' => 'umbalaconmeogia\i18nui\Module',
+            'languages' => ['en', 'ja', 'vi'], // Any languages that you want to use
+        ],
+        'systemuser' => [
+            'class' => 'umbalaconmeogia\systemuser\Module',
+        ],
+    ],
 ];
