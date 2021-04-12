@@ -57,6 +57,10 @@ class SiteController extends Controller
     public function actions()
     {
         return [
+            'auth' => [
+                'class' => 'yii\authclient\AuthAction',
+                'successCallback' => ['umbalaconmeogia\systemuser\helpers\AuthHandler', 'onAuthSuccess'],
+            ],
             'error' => [
                 'class' => 'yii\web\ErrorAction',
             ],
@@ -94,7 +98,7 @@ class SiteController extends Controller
         } else {
             $model->password = '';
 
-            return $this->render('login', [
+            return $this->render('@vendor/umbalaconmeogia/yii2-systemuser/src/views/login', [
                 'model' => $model,
             ]);
         }
