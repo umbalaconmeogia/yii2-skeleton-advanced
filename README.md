@@ -1,6 +1,6 @@
 # yii2-skeleton-advanced
 
-Application skeleton based on yii2 framework advanced template version 2.0.41.
+Application skeleton based on yii2 framework advanced template version 2.0.42.
 
 This is for my own development.
 
@@ -23,8 +23,12 @@ This skeleton contains the following change from the original code.
 1. Display message about running environtment at the screen top left corner by setting `environtmentNotice` in *common\config\params-local.php*.
 
 TODO
-1. Add Login with google.
-2. Move environtmentNotice into yii2-batsg.
+1. Move environtmentNotice into yii2-batsg.
+
+## Setup new application
+
+* Run `init`, choose 0. Development
+* Run migration
 
 ## Directory structure
 
