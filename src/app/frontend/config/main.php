@@ -8,28 +8,30 @@ $params = array_merge(
 
 return [
     'id' => 'app-frontend',
-    'name' => 'Yii2Skel',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => [
-        'log',
-        [
-            'class' => 'umbalaconmeogia\i18nui\components\LanguageSelector',
-            'supportedLanguages' => ['vi', 'en', 'ja'],
-        ],
-    ],
+    'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-frontend',
         ],
         'user' => [
-            'identityClass' => 'umbalaconmeogia\systemuser\models\SystemUser',
+            'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
             'identityCookie' => ['name' => '_identity-frontend', 'httpOnly' => true],
         ],
         'session' => [
             // this is the name of the session cookie used for login on the frontend
             'name' => 'advanced-frontend',
+        ],
+        'log' => [
+            'traceLevel' => YII_DEBUG ? 3 : 0,
+            'targets' => [
+                [
+                    'class' => 'yii\log\FileTarget',
+                    'levels' => ['error', 'warning'],
+                ],
+            ],
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
@@ -42,21 +44,6 @@ return [
             ],
         ],
         */
-        'i18n' => [
-            'translations' => [
-                'yii*' => [
-                    'class' => 'yii\i18n\PhpMessageSource',
-                    'basePath' => '@vendor/yiisoft/yii2/messages',
-                    'sourceLanguage' => 'en'
-                ],
-                'app' => [
-                    'class' => 'yii\i18n\DbMessageSource',
-                    'forceTranslation' => true,
-                    //'enableCaching' => false,
-                    //'cachingDuration' => 3600,
-                ],
-            ],
-        ],
     ],
     'params' => $params,
 ];
