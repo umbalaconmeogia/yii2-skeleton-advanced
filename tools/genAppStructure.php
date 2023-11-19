@@ -127,8 +127,6 @@ class AppStructure
                 throw new Exception("Unknown action $action");
             }
         }
-        $initReverse = 'init-reverse';
-        copy($initReverse, "{$this->appDir}/$initReverse");
     }
 
     private function updateFileContent()

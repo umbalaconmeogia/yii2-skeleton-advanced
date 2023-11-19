@@ -1,6 +1,6 @@
 # yii2-skeleton-advanced
 
-Application skeleton based on yii2 framework advanced template version 2.0.47.
+Application skeleton based on yii2 framework advanced template version 2.0.49.
 
 This is for my own development.
 

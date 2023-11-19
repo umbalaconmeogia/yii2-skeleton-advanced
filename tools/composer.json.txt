@@ -1,0 +1,6 @@
+
+        "yiisoft/yii2-authclient": "*",
+        "giannisdag/yii2-check-login-attempts": "*",
+        "umbalaconmeogia/yii2-batsg": "*",
+        "umbalaconmeogia/yii2-systemuser": "*",
+        "umbalaconmeogia/yii2-i18nui": "*"

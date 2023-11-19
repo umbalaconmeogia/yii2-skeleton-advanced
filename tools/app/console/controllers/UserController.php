@@ -66,11 +66,11 @@ class UserController extends Controller
      * Example
      * Create new User
      *   ```shell
-     *     php yii user/create-user --password=password --email=thanhtt@hybrid-technologies.co.jp --privilege=1
+     *     php yii user/create-user --password=password --email=thanh_tt@example.com --privilege=1
      *   ```
      * Create new User
      *   ```shell
-     *     php yii user/create-user --email=thanhtt@hybrid-technologies.co.jp --name=ThanhTT
+     *     php yii user/create-user --email=thanh_tt@example.com --name=ThanhTT
      *   ```
      */
     public function actionCreateUser()
