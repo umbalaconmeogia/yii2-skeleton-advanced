@@ -39,5 +39,25 @@ return [
             // Or if you use a 3rd party service, see:
             // https://symfony.com/doc/current/mailer.html#using-a-3rd-party-transport
         ],
+        'log' => [
+            'targets' => [
+                [
+                    'class' => 'yii\log\FileTarget',
+                    'levels' => ['error', 'warning', 'info', 'trace'],
+                    'logVars' => [],
+                    'except' => ['yii\db\*'],
+                    'maxLogFiles' => 50,
+                    'logFile' => '@app/runtime/logs/' . date('Ymd') . '_app.log',
+                ],
+                [
+                    'class' => 'yii\log\FileTarget',
+                    'levels' => ['error', 'warning', 'info', 'trace'],
+                    'logVars' => [],
+                    'categories' => ['yii\db\*'],
+                    'maxLogFiles' => 50,
+                    'logFile' => '@app/runtime/logs/' . date('Ymd') . '_sql.log',
+                ],
+            ],
+        ],
     ],
 ];

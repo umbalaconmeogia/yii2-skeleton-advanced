@@ -10,7 +10,7 @@ services:
       # Re-use local composer cache via host-volume
       - ~/.composer-docker/cache:/root/.composer/cache:delegated
       # Mount source-code for development
-      - ./:/app
+      - ../:/app
 
   backend:
     build: backend
@@ -20,7 +20,7 @@ services:
       # Re-use local composer cache via host-volume
       - ~/.composer-docker/cache:/root/.composer/cache:delegated
       # Mount source-code for development
-      - ./:/app
+      - ../:/app
 
   mysql:
     image: mysql:5.7
