@@ -75,6 +75,13 @@ foreach ($files as $file) {
     }
 }
 
+$callbacks = ['setCookieValidationKey'];
+foreach ($callbacks as $callback) {
+    if (!empty($env[$callback])) {
+        $callback("environments/{$env['path']}", $env[$callback]);
+    }
+}
+
 echo "\n  ... initialization completed.\n\n";
 
 function getFileList($root, $basePath = '')
@@ -159,6 +166,16 @@ function getParams()
         }
     }
     return $params;
+}
+
+function setCookieValidationKey($root, $paths)
+{
+    foreach ($paths as $file) {
+        echo "   remove cookie validation key in $file\n";
+        $file = $root . '/' . $file;
+        $content = preg_replace('/(("|\')cookieValidationKey("|\')\s*=>\s*)(".*"|\'.*\')/', "\\1''", file_get_contents($file));
+        file_put_contents($file, $content);
+    }
 }
 
 /**
